@@ -6,7 +6,7 @@ const Header = (): JSX.Element => {
   return (
     <header>
       <div className="container">
-        <ul className="wrappedMenu">
+        <ul className="mobileMenu">
           <li></li>
           <li></li>
           <li></li>
@@ -31,10 +31,18 @@ const Header = (): JSX.Element => {
             <span>Agende Conosco!</span>
           </li>
           <li>
-            <i className="fa-brands fa-whatsapp fa-2xl"></i>
+            <i
+              className="fa-brands fa-whatsapp fa-2xl"
+              onClick={() => window.open("https://wa.me/5511979843026")}
+            ></i>
           </li>
           <li>
-            <i className="fa-brands fa-instagram fa-2xl"></i>
+            <i
+              className="fa-brands fa-instagram fa-2xl"
+              onClick={() =>
+                window.open("https://www.instagram.com/sksbanhoetosa/")
+              }
+            ></i>
           </li>
         </ul>
       </div>

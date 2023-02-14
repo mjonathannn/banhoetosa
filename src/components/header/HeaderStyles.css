@@ -1,13 +1,13 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 200px;
-  background: #f9f6f6;
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: 210px;
+  background: white;
 }
 
 .container {
@@ -18,29 +18,29 @@ header {
   height: 100%;
 }
 
-.wrappedMenu {
+.mobileMenu {
   display: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 
-.wrappedMenu:hover li {
+.mobileMenu:hover li {
   background: orange;
 }
 
-.wrappedMenu li {
+.mobileMenu li {
   width: 60px;
   height: 10px;
-  background: #241a81;
+  background: darkblue;
   list-style: none;
 }
 
-.wrappedMenu li:first-child {
+.mobileMenu li:first-child {
   margin: 0 0 8px 0;
 }
 
-.wrappedMenu li:last-child {
+.mobileMenu li:last-child {
   margin: 8px 0 0 0;
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 .menu li a {
-  color: #241a81;
+  color: darkblue;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .contact li {
-  color: #241a81;
+  color: darkblue;
 }
 
 @media (max-width: 1199px) {
@@ -85,7 +85,7 @@ header {
     justify-content: space-between;
   }
 
-  .wrappedMenu {
+  .mobileMenu {
     display: block;
   }
 
