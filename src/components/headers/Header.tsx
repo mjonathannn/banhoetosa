@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import styles from "./HeaderStyles.module.css";
 
-import logo from "public/images/logo.png";
+import Logo from "public/images/logo.png";
 
 const Header = (): JSX.Element => {
   const Router = useRouter();
@@ -23,7 +23,7 @@ const Header = (): JSX.Element => {
           <li onClick={() => Router.push("/servicos")}>Serviços</li>
         </ul>
 
-        <Image src={logo} alt="logo" />
+        <Image src={Logo} alt="logo" />
 
         <ul className={styles.contact}>
           <li>Agende Conosco!</li>
