@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,18 +30,18 @@ header {
 }
 
 .mobileMenu li {
-  width: 60px;
-  height: 10px;
+  width: 35px;
+  height: 5px;
   background: darkblue;
   list-style: none;
 }
 
 .mobileMenu li:first-child {
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
 }
 
 .mobileMenu li:last-child {
-  margin: 8px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .menu,
@@ -59,25 +59,21 @@ header {
   font-size: 18px;
   letter-spacing: 1px;
   list-style: none;
-}
-
-.menu li a {
   color: darkblue;
-  text-decoration: none;
 }
 
-.menu li a:hover,
+.menu li:hover,
 .contact li i:hover {
-  cursor: pointer;
   color: orange;
+  cursor: pointer;
 }
 
 .contact li {
   color: darkblue;
 }
 
-@media (max-width: 1199px) {
-  header {
+@media (max-width: 1099px) {
+  .header {
     height: 100px;
   }
 
@@ -90,16 +86,16 @@ header {
   }
 
   .menu,
-  header img {
+  .header img {
     display: none;
   }
 
   .contact {
     justify-content: flex-end;
-    width: 500px;
+    width: 100%;
   }
 
   .contact li {
-    font-size: 30px;
+    margin: 0 8px;
   }
 }

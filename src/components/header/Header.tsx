@@ -1,40 +1,37 @@
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
-import "./HeaderStyles.css";
+import styles from "./HeaderStyles.module.css";
+
+import logo from "public/images/logo.png";
 
 const Header = (): JSX.Element => {
+  const Router = useRouter();
+
   return (
-    <header>
-      <div className="container">
-        <ul className="mobileMenu">
+    <div className={styles.header}>
+      <div className={styles.container}>
+        <ul className={styles.mobileMenu}>
           <li></li>
           <li></li>
           <li></li>
         </ul>
 
-        <ul className="menu">
-          <li>
-            <Link to="/">Página Inicial</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/servicos">Serviços</Link>
-          </li>
+        <ul className={styles.menu}>
+          <li onClick={() => Router.push("/")}>Página Inicial</li>
+          <li onClick={() => Router.push("/sobre")}>Sobre</li>
+          <li onClick={() => Router.push("/servicos")}>Serviços</li>
         </ul>
 
-        <img src="/images/logo.png" alt="logo" />
+        <Image src={logo} alt="logo" />
 
-        <ul className="contact">
-          <li>
-            <span>Agende Conosco!</span>
-          </li>
+        <ul className={styles.contact}>
+          <li>Agende Conosco!</li>
           <li>
             <i
               className="fa-brands fa-whatsapp fa-2xl"
               onClick={() => window.open("https://wa.me/5511979843026")}
-            ></i>
+            />
           </li>
           <li>
             <i
@@ -42,11 +39,11 @@ const Header = (): JSX.Element => {
               onClick={() =>
                 window.open("https://www.instagram.com/sksbanhoetosa/")
               }
-            ></i>
+            />
           </li>
         </ul>
       </div>
-    </header>
+    </div>
   );
 };
 
