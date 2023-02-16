@@ -6,7 +6,8 @@
   padding: 20px 0;
   width: 100%;
   height: auto;
-  background: url("../../../public/images/image1.jpg") no-repeat center center;
+  background: url("../../../../public/images/image1.jpg") no-repeat center
+    center;
 }
 
 .container {
@@ -26,6 +27,7 @@
 .container h1 {
   font-size: 80px;
   font-weight: normal;
+  letter-spacing: 1px;
   color: white;
   margin: 0 20px 0 0;
   width: 600px;

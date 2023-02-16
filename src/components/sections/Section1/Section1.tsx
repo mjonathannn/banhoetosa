@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import styles from "./SectionStyles.module.css";
+import styles from "./Section1Styles.module.css";
 
 import Image2 from "public/images/image2.jpg";
 
-const Section = (): JSX.Element => {
+const Section1 = (): JSX.Element => {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
@@ -18,4 +18,4 @@ const Section = (): JSX.Element => {
   );
 };
 
-export default Section;
+export default Section1;
