@@ -44,6 +44,37 @@
   margin: 5px 0 0 0;
 }
 
+.mobileMenuItemsContainer {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 20px;
+}
+
+.mobileMenuItems {
+  margin: 70px 0 0 0;
+  padding: 10px 10px;
+  width: 120px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: darkblue;
+}
+
+.mobileMenuItems li {
+  margin: 0 0 15px 0;
+  color: white;
+  list-style: none;
+  font-size: 18px;
+}
+
+.mobileMenuItems li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
 .menu,
 .contact {
   display: flex;
@@ -81,7 +112,15 @@
     justify-content: space-between;
   }
 
+  .mobileMenuItemsContainer {
+    height: 20px;
+  }
+
   .mobileMenu {
+    display: block;
+  }
+
+  .mobileMenuItemsContainer {
     display: block;
   }
 
