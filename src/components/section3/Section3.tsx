@@ -1,10 +1,13 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import styles from "./Section3Styles.module.css";
 
 import Didi from "public/images/didi.png";
 
 const Section3 = (): JSX.Element => {
+  const Router = useRouter();
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
@@ -21,7 +24,7 @@ const Section3 = (): JSX.Element => {
             um serviço diferenciado, de qualidade e com a máxima segurança.
           </h2>
 
-          <button>Quem somos</button>
+          <button onClick={() => Router.push("/sobre")}>Quem somos</button>
         </div>
       </div>
     </div>

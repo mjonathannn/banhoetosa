@@ -7,11 +7,19 @@ import Pelos from "public/images/pelos.png";
 import Banho from "public/images/Banho.png";
 import Hidratacao from "public/images/hidratacao.png";
 
-const Section2 = (): JSX.Element => {
+type Props = {
+  services?: boolean;
+};
+
+const Section2 = ({ services }: Props): JSX.Element => {
   return (
-    <div className={styles.section}>
+    <div className={services ? styles.sectionServices : styles.section}>
       <div className={styles.container}>
-        <h1>Venha conhecer nossos serviços!</h1>
+        <h1>
+          {services
+            ? `Serviço para cada Pet.`
+            : `Venha conhecer nossos serviços!`}
+        </h1>
 
         <div className={styles.box}>
           <Image src={Banho} alt="Banho" />
