@@ -45,7 +45,6 @@
 }
 
 .mobileMenuItemsContainer {
-  /* display: none; */
   position: absolute;
   top: 0;
   margin-left: auto;
@@ -61,6 +60,7 @@
   height: 100px;
   border-radius: 15px;
   background-color: darkblue;
+  box-shadow: 5px 5px 15px black;
 }
 
 .mobileMenuItems li {
